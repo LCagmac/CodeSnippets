@@ -1,4 +1,14 @@
 this.PlaySound();
-if(eventDropdown.value == 0){
+if(eventDropdown.value == 0)
+{
   OnDropdownValueChangedI(1);
 }
+
+
+public void OnDropdownValueChanged((int index)
+{
+  AkSoundEngine.SetSwitch("HeavyBassSounds", "Sounds", gameObject);
+  AkSoundEngine.PostEvent("HeavyBassI", gameObject);
+  Debug.Log("Is playing");
+}
+
