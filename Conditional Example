@@ -1,0 +1,4 @@
+this.PlaySound();
+if(eventDropdown.value == 0){
+  OnDropdownValueChangedI(1);
+}
